@@ -38,7 +38,7 @@ boxes.forEach((box) => {
     }
     box.disabled = true;
     count++;
-
+    checkWinner();
     let isWinner = checkWinner();
 
     if (count === 9 && !isWinner) {
